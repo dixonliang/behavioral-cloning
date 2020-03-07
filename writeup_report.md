@@ -70,9 +70,8 @@ The overall strategy for deriving a model architecture was to start with a basic
 
 In order to gauge how well the model was working, I split my image and steering angle data into a training (80% of the data) and validation set (20% of the data). To combat overfitting, I modified the model so that there was a dropout layer of 20% after the first convolutional layer. 
 
-The final step was to run the simulator to see how well the car was driving around track one. There were two spots where the car seemed to drive off the edge (as seen per below). The initial models seemed to drift immediately after curves and couldn't recongize that the dirt boundaries were in fact boundaries. To improve the driving behavior in these cases, I had to retrain by gathering more data specifically those instances including recovery driving if we got close to the boundaries (sharp turning away from the boundary). 
+The final step was to run the simulator to see how well the car was driving around track one. There were two spots where the car seemed to drive off the edge (as seen per below an example of the dirt road). The initial models seemed to drift immediately after curves and couldn't recongize that the dirt boundaries were in fact boundaries. To improve the driving behavior in these cases, I had to retrain by gathering more data specifically those instances including recovery driving if we got close to the boundaries (sharp turning away from the boundary). 
 
-<img src="./examples/curve.JPG" alt="alt text" width=200 height=200>
 <img src="./examples/dirt.JPG" alt="alt text" width=200 height=200>
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
