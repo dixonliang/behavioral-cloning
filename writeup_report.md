@@ -13,8 +13,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/curve.jpg "curve"
-[image2]: ./examples/dirt.jpg "dirt"
+[image1]: ./examples/curve.JPG "curve"
+[image2]: ./examples/dirt.JPG "dirt"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -72,8 +72,8 @@ In order to gauge how well the model was working, I split my image and steering 
 
 The final step was to run the simulator to see how well the car was driving around track one. There were two spots where the car seemed to drive off the edge (as seen per below). The initial models seemed to drift immediately after curves and couldn't recongize that the dirt boundaries were in fact boundaries. To improve the driving behavior in these cases, I had to retrain by gathering more data specifically those instances including recovery driving if we got close to the boundaries (sharp turning away from the boundary). 
 
-<img src="./examples/curve.jpg" alt="alt text" width=200 height=200>
-<img src="./examples/dirt.jpg" alt="alt text" width=200 height=200>
+<img src="./examples/curve.JPG" alt="alt text" width=200 height=200>
+<img src="./examples/dirt.JPG" alt="alt text" width=200 height=200>
 
 At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
